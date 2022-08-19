@@ -1,0 +1,1898 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>Trivia del Debate: After Crack Bang BOOM!</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108896937-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-108896937-1');
+</script>
+
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-default">
+      <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Trivia del Debate: After Crack Bang BOOM!</a>
+        </div>
+      </div><!-- /.container-fluid -->
+    </nav>
+  </header>
+
+  <div class="container">
+
+    <div class="col-md-8">
+      <div class="row">
+        <ul class="nav nav-pills" role="tablist">
+          <li role="presentation"><a href="#rules" role="tab" data-toggle="tab" class="active">Reglamento</a></li>
+          <li role="presentation"><a href="#aprox" role="tab" data-toggle="tab">Aproximación</a></li>
+          <li role="presentation"><a href="#trivia" role="tab" data-toggle="tab">Trivia</a></li>
+          <li role="presentation"><a href="#killer" role="tab" data-toggle="tab">Asesinas</a></li>
+          <li role="presentation"><a href="#riddler" role="tab" data-toggle="tab">Riddler</a></li>
+        </ul>
+
+        <div class="tab-content">
+
+          <div id="rules" class="tab-pane active" role="tabpanel">
+
+            <header>
+              <h2>Reglamento</h2>
+            </header>
+
+            <article class="" id="RulesText">
+            <p>Arrancamos con una ronda de <strong>SIETE</strong> preguntas de <strong>Aproximaciones</strong>. <br>Cada participante que gane la <strong>Aproximación</strong> ocupará uno de los siete lugares disponibles para la <strong>Ronda de Preguntas</strong> (el octavo le corresponde al ganador de la Trivia anterior).<br><strong>El resto queda eliminado, y puede quedarse a presenciar el resto del concurso.</strong></p><p>La <strong>Ronda de Preguntas</strong> consiste en <strong>80 preguntas ocultas en un panel</strong>. <br>Por orden, cada participante descubrirá una pregunta. Si la responde correctamente, sumará un punto y podrá descubrir otra pregunta. <br>Si responde de modo incorrecto, no suma puntos y el turno pasa al participante de su izquierda. </p><p><strong>No hay límite de preguntas que pueda responder un participante cuando sea su turno</strong>.<br>Mientras responda correctamente, podrá seguir descubriendo preguntas del panel y sumando puntos para su cosecha.</p><p>Al ser sólo 80 preguntas, cada punto que suma un participante es un punto que no suman los demás.</p><p>Una vez formuladas las 80 preguntas, los tres participantes que más puntos hayan obtenido pasan a la <strong>Ronda Final</strong>. Si dos o más participantes empatan en cantidad de puntos, se definirá el finalista con una ronda de <strong>Aproximaciones</strong>.</p><p>En la <strong>Ronda Final</strong>, los participantes responderán una pregunta por turno. <br><strong>El que contesta de forma incorrecta por tercera vez, queda eliminado</strong>.<br>El ganador será el <strong>ULTIMO</strong> que quede en pie.<br></p><p>Los dos finalistas que queden en el camino podrán competir por otros premios en el juego titulado <strong>THE RIDDLER!</strong><br>El que más respuestas correctas obtuvo a lo largo de la noche, elige primero, entre dos categorías: AUTOR o PERSONAJE.<br>Habrá que deducir el nombre de un autor o personaje a partir de cinco pistas, con este procedimiento:</p><p>- Se dará lectura de la primera pista. Ahí el participante podrá arriesgar, y si responde correctamente el nombre del autor o personaje ganará 5 LIBROS.<br>- Si no arriesga, o contesta incorrectamente, se dará lectura a la segunda pista. De nuevo, el participante podrá arriesgar, ahora con la posibilidad de ganar 4 LIBROS.<br>- Si no arriesga o no acierta pasamos a la tercera pista, y esta vez podrá arriesgar por 3 LIBROS.<br>Y así hasta la quinta y última pista. Si acierta, se lleva 1 LIBRO. Si no, ninguno.</p>
+            </article>
+
+          </div>
+
+          <div id="aprox" class="tab-pane" role="tabpanel">
+
+            <header>
+              <h2>Aproximación</h2>
+            </header>
+
+            <form id="aproxQuestionForm">
+              <button type="button" class="btn btn-sm btn-info" id="StartAprox">GO!</button>
+              <button type="button" class="btn btn-sm btn-success" id="prevAproxQuestion">Anterior</button>
+              <button type="button" class="btn btn-sm btn-success" id="nextAproxQuestion">Próxima</button>
+              <button type="button" class="btn btn-sm btn-danger" id="showAproxAnswer">Respuesta</button>
+            </form>
+
+            <hr/>
+
+            <article class="question" id="AproxQuestion">
+
+              <header>
+                <h3 id="aprox-question"></h3>
+              </header>
+
+              <ul class="list-unstyled">
+              </ul>
+
+            </article>
+
+          </div><!-- de panel aprox-->
+
+          <div id="trivia" class="tab-pane" role="tabpanel">
+
+            <header>
+              <h2>Trivia</h2>
+            </header>
+
+
+            <form id="TriviaForm" class="form-inline">
+              <div class="input-group input-group-sm col-md-2">
+                <span class="input-group-btn">
+                  <button class="btn btn-success" type="submit" id="goQuestion">Go!</button>
+                </span>
+                <input type="number" min="1" max="100" class="form-control" placeholder="" id="questionID" title="Presione Enter para elegir">
+              </div>
+              <button type="button" class="btn btn-sm btn-danger" id="showCorrectAnswer">Mostrar Correcta</button>
+            </form>
+            <article class="question" id="TriviaQuestion">
+
+              <header>
+                <h3 id="trivia-question">Elija una pregunta de la lista</h3>
+              </header>
+
+              <ul class="list-unstyled">
+              </ul>
+
+            </article>
+
+
+          </div><!-- de panel trivia-->
+
+          <div id="killer" class="tab-pane" role="tabpanel">
+
+            <header>
+              <h2>Asesinas</h2>
+            </header>
+
+            <form id="killerQuestionForm">
+              <button type="button" class="btn btn-sm btn-info" id="StartKiller">GO!</button>
+              <button type="button" class="btn btn-sm btn-success" id="prevKillerQuestion">Anterior</button>
+              <button type="button" class="btn btn-sm btn-success" id="nextKillerQuestion">Próxima</button>
+              <button type="button" class="btn btn-sm btn-danger" id="showKillerAnswer">Respuesta</button>
+            </form>
+
+            <hr/>
+
+            <article class="question" id="KillerQuestion">
+
+              <header>
+                <h3 id="killer-question"></h3>
+              </header>
+
+              <ul class="list-unstyled">
+              </ul>
+
+            </article>
+
+          </div><!-- de panel killer-->
+
+          <div id="untie" class="tab-pane" role="tabpanel">
+          <header>
+              <h2>Desempate</h2>
+            </header>
+
+            <form id="untieQuestionForm">
+              <button type="button" class="btn btn-sm btn-info" id="StartUntie">GO!</button>
+              <button type="button" class="btn btn-sm btn-success" id="prevUntieQuestion">Anterior</button>
+              <button type="button" class="btn btn-sm btn-success" id="nextUntieQuestion">Próxima</button>
+              <button type="button" class="btn btn-sm btn-danger" id="showUntieAnswer">Respuesta</button>
+            </form>
+
+            <hr/>
+
+            <article class="question" id="UntieQuestion">
+
+              <header>
+                <h3 id="untie-question"></h3>
+              </header>
+
+              <ul class="list-unstyled">
+              </ul>
+
+            </article>
+          </div><!-- de panel untie-->
+
+          <div id="riddler" class="tab-pane" role="tabpanel">
+            <header>
+              <h2>Riddler</h2>
+            </header>
+
+            <form id="riddlerQuestionForm">
+              <button type="button" class="btn btn-sm btn-info" id="StartRiddler">GO!</button>
+              <button type="button" class="btn btn-sm btn-success" id="prevRiddlerQuestion">Autor</button>
+              <button type="button" class="btn btn-sm btn-success" id="nextRiddlerQuestion">Personaje</button>
+              <button type="button" class="btn btn-sm btn-success" id="showRiddlerOption">Mostrar Opción</button>
+              <button type="button" class="btn btn-sm btn-danger" id="showRiddlerAnswer">Respuesta</button>
+            </form>
+
+            <hr/>
+
+            <article class="question" id="RiddlerQuestion">
+
+              <ul class="list-unstyled" id="RiddlerCorrect">
+              </ul>
+
+              <header>
+                <h3 id="riddler-question"></h3>
+              </header>
+
+              <ul class="list-unstyled" id="RiddlerOptions">
+              </ul>
+
+            </article>
+
+          </div><!-- de panel riddler-->
+
+        </div>
+      </div>
+    </div><!-- de la columna-->
+
+    <div class="col-md-4">
+
+      <header>
+        <img src="img/footer.png" width="100%"/>
+        <h4>Jugadores</h4>
+
+        <div class="">
+          <form class="form-inline" id="formAddUsers">
+            <div class="input-group input-group-sm">
+              <span class="input-group-addon" id="sizing-addon3">@</span>
+              <input id="PlayerName" type="text" class="form-control" placeholder="Nombre y Apellido" aria-describedby="sizing-addon3">
+            </div>
+            <div>
+              <button type="submit" class="btn btn-danger btn-sm" id="AddUser">Agregar</button>
+            <button class="btn btn-success btn-sm" type="reset" id="DoneAddUser">Listo</button>
+            </div>
+
+          </form>
+        </div>
+
+        <div class="">
+
+          <ul class="list-unstyled" id="PlayerList"></ul>
+
+        </div>
+        <div class="">
+          <form class="form-inline" id="formAddUserPoints" style="display:none;">
+            <select id="UserPointsSelect" class="form-control">
+            </select>
+            <button class="btn btn-sm btn-primary" id="plusPoint">+</button> <button class="btn btn-sm btn-warning" id="minusPoint">-</button>
+          </form>
+        </div>
+
+      </header>
+
+      <footer id="triviaButtons" class="container-fluid">
+        <div class="btn-group" role="group" aria-label="First group">
+          <button type="button" class="btn btn-default btn-md">64</button>
+        </div>
+      </footer>
+
+    </div><!-- de la columna-->
+
+  </div><!-- container -->
+
+
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <script>
+
+  document.onkeydown=function(){
+  //alert('keycode='+event.keyCode + 'event.ctrlKey='+event.ctrlKey );
+    switch (event.keyCode) {
+    case 116 : //F5
+      event.returnValue=false;
+      event.keyCode=0;
+      console.log('Refresh is disabled');
+      return false;
+
+    case 78: //n
+      if (event.ctrlKey) {
+        event.returnValue=false;
+        event.keyCode=0;
+        console.log('New window is disabled');
+        return false;
+      }
+    case 82 : //r
+      if (event.ctrlKey) {
+        event.returnValue=false;
+        event.keyCode=0;
+        console.log('Refresh is disabled');
+        return false;
+      }
+    }
+  }
+
+
+  $(function() {
+
+
+    if(localStorage.getItem("Players")) console.log("Hay Players en Storage");
+    // APLICAR LOGICA DE LEVANTAR LISTA DE AHI
+
+    var State = {
+
+      Users: {},
+      Aprox: {},
+      Trivia: {},
+      Killer: {},
+      Untie: {},
+      Riddler: {},
+
+    };
+
+    // FUNCIONES DE APROX
+
+    State.Aprox.Init = function(){
+
+      this.cursor = 0;
+      this.maxQuestions = this.Questions.length;
+      console.log("Init Aprox", this);
+
+    };
+
+    State.Aprox.Start = function(e){
+
+      e.preventDefault();
+      this.getQuestion(e, this.cursor);
+      console.log("Aprox Started");
+
+    };
+
+    State.Aprox.Prev = function(e){
+
+      e.preventDefault();
+
+      if(this.cursor > 0) {
+        this.cursor--;
+        this.getQuestion(e, this.cursor);
+        console.log("Aprox Prev");
+      }else return;
+
+    };
+
+    State.Aprox.Next = function(e){
+
+      e.preventDefault();
+      let maxQ = this.maxQuestions -1;
+      if(this.cursor < maxQ) {
+        this.cursor++;
+        this.getQuestion(e, this.cursor);
+        console.log("Aprox Prev");
+      }else return;
+
+    };
+
+    State.Aprox.showCorrect = function(e){
+
+      e.preventDefault();
+      let AproxQuestion = State.Aprox.Questions[this.cursor];
+      let answerList = $("#AproxQuestion ul");
+      answerList.find('li').remove();
+
+      $.each(AproxQuestion.correct, function(i, v){
+
+        let li = document.createElement('li');
+        let text = document.createTextNode(v);
+        li.appendChild(text);
+
+        if(v == AproxQuestion.correct[0]) li.setAttribute('style', 'alert alert-danger');
+        else li.setAttribute("class", 'alert');
+
+        answerList.append(li);
+
+      });
+
+    };
+
+    State.Aprox.getQuestion = function(e, q){
+
+      e.preventDefault();
+      let len = State.Aprox.Questions.length;
+
+      if(q == '' || q > len) q = this.cursor;
+
+      console.log("Obteniendo Pregunta", q, State.Aprox.Questions.length);
+
+      let AproxQuestion = State.Aprox.Questions[q];
+
+      // ACA DIBUJO
+      $("#AproxQuestion h3").html(AproxQuestion.text);
+
+      let answerList = $("#AproxQuestion ul");
+      answerList.find('li').remove();
+
+    };
+
+
+    State.Aprox.Questions = [
+
+      {
+        "text": "¿Qué día seis de los fundadores de Image votaron por expulsar de la sociedad a Rob Liefeld?",
+        "correct":["4 de Septiembre de 1996"],
+        "answers": []
+      },
+
+      {
+        "text": "¿Cuántos dibujantes y guionistas participaron de la antología DisTinta?",
+        "correct":["39"],
+        "answers": []
+      },
+
+      {
+        "text": "¿Cuántos títulos ofrecieron las distribuidoras de EEUU en Agosto de 1993?",
+        "correct":["766"],
+        "answers": []
+      },
+
+      {
+        "text": "¿Con cuántos alumnos empezó el primer curso de la escuela de Joe Kubert?",
+        "correct":["22"],
+        "answers": []
+      },
+
+      {
+        "text": "¿En qué número de la revista Pilote se publicó la primera aparición del Teniente Blueberry?",
+        "correct":["210"],
+        "answers": []
+      },
+
+      {
+        "text": "¿Cuántos cartuchos con fluído arácnido entran en el cinturón de Spider-Man?",
+        "correct":["30"],
+        "answers": []
+      },
+      {
+        "text": "Según Takao Saito, ¿en qué fecha elaboró la CIA el primer documento acerca de Golgo 13?",
+        "correct":["1 de Agosto de 1970"],
+        "answers": []
+      },
+
+      {
+        "text": "En el ranking de IGN de los Top 50 Avengers, ¿qué puesto ocupó Quicksilver?",
+        "correct":["44"],
+        "answers": []
+      },
+
+      {
+        "text": "¿Cuántos episodios de Cabo Savino escribió Jorge Morhain?",
+        "correct":["265"],
+        "answers": []
+      },
+
+      {
+        "text": "¿Qué día se publicó la primera aparición de Valérian?",
+        "correct":["9 de Noviembre de 1967"],
+        "answers": []
+      }
+
+    ];
+
+
+    State.Untie.Init = function(){
+
+      this.cursor = 0;
+      this.maxQuestions = this.Questions.length;
+      console.log("Init Untie", this);
+
+    };
+
+    State.Untie.Start = function(e){
+
+      e.preventDefault();
+      this.getQuestion(e, this.cursor);
+      console.log("Untie Started");
+
+    };
+
+    State.Untie.Prev = function(e){
+
+      e.preventDefault();
+
+      if(this.cursor > 0) {
+        this.cursor--;
+        this.getQuestion(e, this.cursor);
+        console.log("Untie Prev");
+      }else return;
+
+    };
+
+    State.Untie.Next = function(e){
+
+      e.preventDefault();
+      let maxQ = this.maxQuestions -1;
+      if(this.cursor < maxQ) {
+        this.cursor++;
+        this.getQuestion(e, this.cursor);
+        console.log("Untie Prev");
+      }else return;
+
+    };
+
+    State.Untie.showCorrect = function(e){
+
+      e.preventDefault();
+      let UntieQuestion = State.Untie.Questions[this.cursor];
+      let answerList = $("#UntieQuestion ul");
+      answerList.find('li').remove();
+
+      $.each(UntieQuestion.correct, function(i, v){
+
+        let li = document.createElement('li');
+        let text = document.createTextNode(v);
+        li.appendChild(text);
+
+        if(v == UntieQuestion.correct[0]) li.setAttribute('style', 'alert alert-danger');
+        else li.setAttribute("class", 'alert');
+
+        answerList.append(li);
+
+      });
+
+    };
+
+    State.Untie.getQuestion = function(e, q){
+
+      e.preventDefault();
+      let len = State.Untie.Questions.length;
+
+      if(q == '' || q > len) q = this.cursor;
+
+      console.log("Obteniendo Pregunta", q, State.Untie.Questions.length);
+
+      let UntieQuestion = State.Untie.Questions[q];
+
+      // ACA DIBUJO
+      $("#UntieQuestion h3").html(UntieQuestion.text);
+
+      let answerList = $("#UntieQuestion ul");
+      answerList.find('li').remove();
+
+    };
+
+
+    State.Untie.Questions = [
+
+      {
+        "text": "Según el relevamiento realizado por Amanda Shendruk en 2017, ¿qué porcentaje de los personajes de Marvel y DC son mujeres?",
+        "correct":["26.7%"],
+        "answers": []
+      },
+      {
+        "text": "Según Don Rosa, ¿en qué año nació Scrooge McDuck?",
+        "correct":["1867"],
+        "answers": []
+      }
+
+    ];
+
+
+    // FUNCIONES DE KILLERS
+
+    State.Killer.Init = function(){
+
+      this.cursor = 0;
+      this.maxQuestions = this.Questions.length;
+
+      console.log("Init Killer", this);
+
+    };
+
+    State.Killer.Start = function(e){
+
+      e.preventDefault();
+      this.getQuestion(e, this.cursor);
+      console.log("Killer Started");
+
+    };
+
+    State.Killer.Prev = function(e){
+
+      e.preventDefault();
+
+      if(this.cursor > 0) {
+        this.cursor--;
+        this.getQuestion(e, this.cursor);
+        console.log("Killer Prev");
+      }else return;
+
+    };
+
+    State.Killer.Next = function(e){
+
+      e.preventDefault();
+      let maxQ = this.maxQuestions -1;
+      if(this.cursor < maxQ) {
+        this.cursor++;
+        this.getQuestion(e, this.cursor);
+        console.log("Killer Prev");
+      }else return;
+
+    };
+
+    State.Killer.getQuestion = function(e, q){
+
+      e.preventDefault();
+      let len = State.Killer.Questions.length;
+
+      if(q == '' || q > len) q = this.cursor;
+
+      console.log("Obteniendo Pregunta", q, State.Killer.Questions.length);
+
+      let KillerQuestion = State.Killer.Questions[q];
+
+      // ACA DIBUJO
+      $("#KillerQuestion h3").html(KillerQuestion.text);
+
+      let answerList = $("#KillerQuestion ul");
+      answerList.find('li').remove();
+
+      $.each(KillerQuestion.answers, function(i, v){
+
+        let li = document.createElement('li');
+        let text = document.createTextNode(v);
+        li.appendChild(text);
+
+        if(v == KillerQuestion.correct[0]) li.setAttribute("class", 'alert correct');
+        else li.setAttribute("class", 'alert');
+
+        answerList.append(li);
+
+      });
+
+    };
+
+    State.Killer.showCorrect = function(e){
+      e.preventDefault();
+      $("#KillerQuestion li.correct").addClass('alert alert-success');
+    };
+
+    State.Killer.Questions = [
+
+    {
+        "text": "¿Con qué nombre es más conocido Davan Shakari?",
+        "correct":["Eric the Red"],
+        "answers": [
+          "Baron Blood", "Eric the Red", "Shadow King", "The Shroud"
+        ]
+      },
+
+      {
+        "text": "¿Con qué dibujante formó equipo Alfredo Grassi en Tagh?",
+        "correct":["Juan Zanotto"],
+        "answers": [
+          "Ernesto García Seijas", "Juan Zanotto", "Lucho Olivera", "Ricardo Villagrán"
+        ]
+      },
+
+      {
+        "text": "¿Con qué nombre es más conocida Doris Zuel?",
+        "correct":["Giganta"],
+        "answers": [
+          "Doctor Cyber", "Giganta", "Silver Banshee", "Silver Swan"
+        ]
+      },
+
+      {
+        "text": "¿Con qué personaje relacionamos al autor Ernie Bushmiller?",
+        "correct":["Nancy"],
+        "answers": [
+          "Little Annie Fanny", "Little Orphan Annie", "Little Lulu", "Nancy"
+        ]
+      },
+
+      {
+        "text": "En 1958 apareció por primera vez un guión de H.G. Oesterheld en una publicación de Columba. ¿En cuál?",
+        "correct":["El Tony"],
+        "answers": [
+          "D´Artganan", "El Tony", "Fantasía", "Intervalo"
+        ]
+      },
+
+      {
+        "text": "¿Con qué nombre fue más conocido Roderick Kingsley?",
+        "correct":["Hobgoblin"],
+        "answers": [
+          "Carrion", "Hobgoblin", "Hydro-Man", "Molten Man"
+        ]
+      },
+      {
+        "text": "¿Quién dibujó la primera aparición de Sabrina, the teenage witch?",
+        "correct":["Dan DeCarlo"],
+        "answers": [
+          "Dan DeCarlo", "Dan Parent", "Samm Schwartz", "Stan Goldberg"
+        ]
+      },
+
+      {
+        "text": "En 2013 se publicó el primer comic de Judge Dredd escrito por una mujer. ¿Quién fue la autora?",
+        "correct":["Emma Beeby"],
+        "answers": [
+          "Emma Beeby", "Laura Bailey", "Maura McHugh", "Tillie Walden"
+        ]
+      },
+      {
+        "text": "En Saint Seiya, ¿cuál de estos caballeros fue el primero en obtener el octavo sentido (o Arayashiki)?",
+        "correct":["Shaka"],
+        "answers": [
+          "Dohko", "Kanon", "Seiya", "Shaka"
+        ]
+      },
+
+      {
+        "text": "¿Cuál de estos malvivientes integraba la pandilla de Makoki?",
+        "correct":["El Tío Emo"],
+        "answers": [
+          "El Kebra", "El Tío Emo", "Paco el Zestas", "Piter Punk"
+        ]
+      },
+
+      {
+        "text": "¿En qué ciudad ficticia transcurren las aventuras de Kane, el personaje de Paul Grist?",
+        "correct":["New Eden"],
+        "answers": [
+          "Distopia", "Insomnia", "New Eden", "Snap City"
+        ]
+      },
+
+      {
+        "text": "¿Con qué nombre fue más conocido Matt Hawk?",
+        "correct":["Two-Gun Kid"],
+        "answers": [
+          "Gunhawk", "Kid Colt", "Rawhide Kid", "Two-Gun Kid"
+        ]
+      },
+      {
+        "text": "Journey fue un comic creado por William Messner-Loeb, que narraba las aventuras de Wolverine Macalistaire. ¿Qué editorial lo publicaba?",
+        "correct":["Fantagraphics"],
+        "answers": [
+          "Comico", "Eclipse", "Fantagraphics", "First"
+        ]
+      },
+      {
+        "text": "Cual libro no fue guionizado por Jason?",
+        "correct":["Isla de los 10 mil muertos"],
+        "answers": [
+          "Low Moon", "Isla de los 10 mil muertos", "I killed Adolf Hitler", "Lost Cat"
+        ]
+      },
+      {
+        "text": "¿Qué encuentran los Pitufos en el álbum “El Bosque Prohibido”?",
+        "correct":["Una aldea donde sólo hay pitufas"],
+        "answers": [
+          "Una aldea donde sólo hay pitufas", "Una poción que les permite adquirir el tamaño de los humanos", "Una tribu de pitufos dorados que venera a Azrael como a un dios", "Un portal mágico que los trae al Siglo XXI"
+        ]
+      }
+
+    ];
+
+
+    // FUNCIONES DE TRIVIA
+
+    State.Trivia.Init = function(){
+
+      this.cursor = 0;
+      this.maxQuestions = this.Questions.length;
+
+      this.DrawButtons();
+
+      console.log("Init Trivia", this);
+
+    };
+
+
+    State.Trivia.Questions = [
+      {
+        "text": "01 Después de los sucesos de Zero Hour, ¿qué pasó con los Lords of Order y los Lords of Chaos?",
+        "correct": ["Desaparecieron"],
+        "answers": [
+          "Desaparecieron",
+          "Quedaron atrapados en un loop en el reinicio del tiempo",
+          "Reencarnaron en hombres y mujeres normales",
+          "Se fusionaron en un único ser omnipotente"
+        ]
+      },
+      {
+        "text": "02 ¿A qué villano de DC se enfrentó Cazador en uno de sus arcos argumentales más recordados?",
+        "correct": ["Darkseid"],
+        "answers": [
+          "Brainiac",
+          "Darkseid",
+          "Luthor",
+          "Joker"
+        ]
+      },
+      {
+        "text": "03 ¿Cuál es el verdadero nombre de Foggy Nelson?",
+        "correct": ["Franklin"],
+        "answers": [
+          "Francis","Franklin","Fraser","Frederick"
+        ]
+      },
+      {
+        "text": "04 ¿En qué conflicto bélico está ambientada Los Centinelas, la serie de Xavier Dorison y Enrique Breccia?",
+        "correct": ["La Primera Guerra Mundial"],
+        "answers": [
+          "La guerra franco-prusiana", "La Primera Guerra Mundial", "La Segunda Guerra Mundial", "La guerra de Vietnam"
+        ]
+      },
+      {
+        "text": "05 ¿Cómo se llamaba el sello en el que David Lapham publicaba Stray Bullets?",
+        "correct": ["El Capitán"],
+        "answers": [
+          "El Capitán",
+          "El Corsario",
+          "El General",
+          "El Matador"
+        ]
+      },
+      {
+        "text": "06 ¿Cuál es el apellido de Light, el protagonista de Death Note?",
+        "correct": ["Yagami"],
+        "answers": [
+          "Shinigami", "Takada","Takagi","Yagami"
+        ]
+      },
+      {
+        "text": "07 ¿En qué revista vimos la primera aparición de Enemy Ace?",
+        "correct": ["Our Army at War"],
+        "answers": [
+          "G.I. Combat", "Our Army at War", "Showcase", "Weird War Tales"
+        ]
+      },
+      {
+        "text": "08 ¿Cuál de estos personajes NO fue creado por Guillermo Divito?",
+        "correct": ["Bólido"],
+        "answers": [
+          "Bólido","Fallutelli", "Fúlmine", "Pochita Morfoni"
+        ]
+      },
+      {
+        "text": "09 ¿En qué país transcurre la primera escena del mítico Giant-Size X-Men nº1?",
+        "correct": ["Alemania"],
+        "answers": [
+          "Alemania", "Canadá", "Kenya", "Rusia"
+        ]
+      },
+      {
+        "text": "10 ¿Con qué autor relacionamos a las Aventuras de Adele Blanc-Sec?",
+        "correct": ["Jacques Tardi"],
+        "answers": [
+          "André Julliard", "François Bourgeon", "Jacques Tardi", "Regis Loisel"
+        ]
+      },
+      {
+        "text": "11 ¿Cómo se llama la pareja de Craig Thompson en la novela autobigráfica Blankets?",
+        "correct": ["Raina"],
+        "answers": [
+          "Cassie", "Claire", "Lory", "Raina"
+        ]
+      },
+      {
+        "text": "12 ¿Qué manga tiene como protagonista a Izuki Midoriya?",
+        "correct": ["Boku no Hero Academia"],
+        "answers": [
+          "Assassination Classroom", "Attack on Titan", "Boku no Hero Academia", "The Seven Deadly Sins"
+        ]
+      },
+      {
+        "text": "13 ¿En qué comic de Vertigo aparecían personajes capaces de propulsar aviones con sus mentes?",
+        "correct": ["Air"],
+        "answers": [
+          "Air", "Crossing Midnight", "Testament", "The Unwritten"
+
+        ]
+      },
+      {
+        "text": "14 ¿Cuál de estos nombres NO le corresponde a uno de los protagonistas de 4 Segundos?",
+        "correct": ["Gastón"],
+        "answers": [
+          "Aníbal", "Gastón", "Marcos", "Terli"
+        ]
+      },
+      {
+        "text": "15 ¿Cuál de estos personajes apareció por primera vez en el nº50 de Amazing Spider-Man (1967)?",
+        "correct": ["Wilson Fisk"],
+        "answers": [
+          "El capitán Stacy", "Mary Jane Watson", "Robbie Robertson", "Wilson Fisk"
+        ]
+      },
+      {
+        "text": "16 ¿Qué personalidad de la vida real le presta sus rasgos a un personaje importante en las historietas de Dylan Dog?",
+        "correct": ["Groucho Marx"],
+        "answers": [
+          "Charles Chaplin", "Groucho Marx", "Marilyn Monroe", "Sigmund Freud"
+        ]
+      },
+      {
+        "text": "17 ¿Cómo se llamaba el protagonista de Divine Right?",
+        "correct": ["Max"],
+        "answers": [
+          "Chad", "Dan", "Max", "Zack"
+        ]
+      },
+      {
+        "text": "18 ¿En qué revista publicó Hayao Miyazaki el manga de Nausicaä?",
+        "correct": ["Animage"],
+        "answers": [
+          "Animage", "Big Comic Spirits", "Nakayoshi", "Newtype"
+        ]
+      },
+      {
+        "text": "19 ¿A qué personaje de DC creó el escritor Joe Samachson?",
+        "correct": ["Martian Manhunter"],
+        "answers": [
+          "Animal Man", "Cave Carson", "Hourman", "Martian Manhunter"
+        ]
+      },
+      {
+        "text": "20 ¿Cómo se llamaba el principal esbirro del Dr. Von Reichter, archienemigo de Cybersix?",
+        "correct": ["Krumens"],
+        "answers": [
+          "Krantz", "Kreplaj", "Krigstein", "Krumens"
+        ]
+      },
+      {
+        "text": "21 ¿Cuál de estos personajes NO debutó en el nº1 de su propia serie o miniserie?",
+        "correct": ["Ms. Marvel (Kamala Khan)"],
+        "answers": [
+          "Blue Marvel", "Moon Girl", "Ms. Marvel (Kamala Khan)", "Ghost Rider (Robbie Reyes)"
+        ]
+      },
+      {
+        "text": "22 ¿Quién luchó contra «el hombre del puño de acero»?",
+        "correct": ["Blueberry"],
+        "answers": [
+          "Blueberry", "Bouncer", "Comanche", "Lucky Luke"
+        ]
+      },
+      {
+        "text": "23 ¿En qué obra de Mark Millar aparece un villano llamado Johnny Bolt?",
+        "correct": ["Supercrooks"],
+        "answers": [
+          "Nemesis", "Supercrooks", "Superior", "Wanted"
+        ]
+      },
+      {
+        "text": "24 ¿Con qué manga relacionamos al autor Yusuke Murata?",
+        "correct": ["One Punch Man"],
+        "answers": [
+          "Bakemonogatari", "Black Clover", "Eden Zero", "One Punch Man"
+        ]
+      },
+      {
+        "text": "25 En la continuidad de las DC Bombshells, ¿cuál de estas heroínas está muerta?",
+        "correct": ["Stargirl"],
+        "answers": [
+          "Donna Troy", "Stargirl", "Supergirl", "Zatanna"
+        ]
+      },
+      {
+        "text": "26 ¿Qué relación hay entre Patricia Breccia y Mariano Buscaglia, guionista de varias de sus obras?",
+        "correct": ["Son tía y sobrino"],
+        "answers": [
+          "Son un matrimonio", "Son madre e hijo", "Son tía y sobrino", "Ninguna"
+        ]
+      },
+      {
+        "text": "27 Después de Rick Leonardi, ¿qué dibujante tuvo a su cargo más issues de la primera serie de Spider-Man 2099?",
+        "correct": ["Andrew Wildman"],
+        "answers": [
+          "Andrew Wildman", "Joe St. Pierre", "Ron Lim", "Tom Grindberg"
+        ]
+      },
+      {
+        "text": "28 ¿En qué ciclo están ambientados los dos últimos álbumes de La Mazmorra?",
+        "correct": ["Crepúsculo"],
+        "answers": [
+          "Amanecer", "Cénit", "Crepúsculo", "Ninguno de los tres"
+        ]
+      },
+      {
+        "text": "29 ¿Quién es el Doctor Zodíaco?",
+        "correct": ["Un villano que enfrentó a Superman y Batman"],
+        "answers": [
+          "El némesis de Mandrake", "Un héroe español de los años ´50", "Un personaje creado por Steve Ditko en los ´70", "Un villano que enfrentó a Superman y Batman"
+        ]
+      },
+      {
+        "text": "30 ¿Con qué manga asociamos al autor Kazushi Hagiwara?",
+        "correct": ["Bastard!!"],
+        "answers": [
+          "Basilisk", "Bastard!!", "Berserk", "Outlaw Star"
+        ]
+      },
+      {
+        "text": "31 En la Golden Age, DC tuvo un villano llamado Bulls-Eye. ¿Contra quién luchaba?",
+        "correct": ["Green Arrow"],
+        "answers": [
+          "Aquaman", "Green Arrow", "Johnny Quick", "Vigilante"
+        ]
+      },
+      {
+        "text": "32 ¿Qué historieta de Pablo De Santis tiene como protagonista a Julio Fux?",
+        "correct": ["Justicia Poética"],
+        "answers": [
+          "Cobalto", "El Hipnotizador", "Justicia Poética", "Rompecabezas"
+        ]
+      },
+      {
+        "text": "33 ¿Con qué nombre es más conocido Ted Sallis?",
+        "correct": ["Man-Thing"],
+        "answers": [
+          "Brother Voodoo", "Man-Thing", "Man-Wolf", "Werewolf by Night"
+        ]
+      },
+      {
+        "text": "34 ¿Al servicio de quién opera Devlin Waugh, el personaje de la 2000 A.D.?",
+        "correct": ["El Vaticano"],
+        "answers": [
+          "Israel", "El Vaticano", "La Corona Británica", "La Unión Soviética"
+        ]
+      },
+      {
+        "text": "35 ¿Cuál de estos villanos no integró ninguna formación de la Brotherhood of Dada?",
+        "correct": ["Candlemaker"],
+        "answers": [
+          "Candlemaker", "Love-Glove", "The Fog", "The Quiz"
+        ]
+      },
+      {
+        "text": "36 ¿Quién resolvió el Caso Webster?",
+        "correct": ["Alack Sinner"],
+        "answers": [
+          "Alack Sinner", "Inspector Bull", "Savarese", "Zero Galván"
+        ]
+      },
+      {
+        "text": "37 ¿Cuál de estos personajes no integró ninguna formación de los Thunderbolts?",
+        "correct": ["Purple Man"],
+        "answers": [
+          "Crossbones", "Doctor Octopus", "Purple Man", "Taskmaster"
+        ]
+      },
+      {
+        "text": "38 ¿Con qué personaje relacionamos al maestro español Vicente Segrelles?",
+        "correct": ["El Mercenario"],
+        "answers": [
+          "El Capitán Trueno", "El Jabato", "El Mercenario", "Haxtur"
+        ]
+      },
+      {
+        "text": "39 ¿Con qué nombre es más conocido Ethan Crane?",
+        "correct": ["Supreme"],
+        "answers": [
+          "Prophet", "Shaft", "Superpatriot", "Supreme"
+        ]
+      },
+      {
+        "text": "40 ¿Cómo se llama la esposa de Buddy Baker?",
+        "correct": ["Ellen"],
+        "answers": [
+          "Ellen", "Laura", "Megan", "Susan"
+        ]
+      },
+      {
+        "text": "41 ¿Qué personaje de Robin Wood tenía como compañero a Hawk, un hombre con un brazo de metal?",
+        "correct": ["Mark"],
+        "answers": [
+          "Danske", "Holbeck", "Mark", "Morgan"
+        ]
+      },
+      {
+        "text": "42 ¿A quién mató Fantomex?",
+        "correct": ["A un clon de Apocalypse"],
+        "answers": [
+          "Al creador de los Predator X", "Al Shadow King", "A Sebastian Shaw", "A un clon de Apocalypse"
+        ]
+      },
+      {
+        "text": "43 ¿Cuál de estas series de autores españoles tuvo como protagonista a una transexual?",
+        "correct": ["Anarcoma"],
+        "answers": [
+          "Anarcoma", "Cleopatra", "Sarita", "Taxi"
+        ]
+      },
+      {
+        "text": "44 ¿Qué personaje volaba montado en un pterodelfo?",
+        "correct": ["Arzak"],
+        "answers": [
+          "Arzak", "Avrack", "Den", "El Mercenario"
+        ]
+      },
+      {
+        "text": "45 En la continuidad pre-Flashpoint, ¿dónde murió Harbinger?",
+        "correct": ["En Themyscira"],
+        "answers": [
+          "En Apokolips", "En Themyscira", "En el universo de anti-materia", "En un hospital de Metropolis"
+        ]
+      },
+      {
+        "text": "46 ¿Qué caracterizaba a Don Fulgencio, el famoso personaje creado en 1938 Por Lino Palacio?",
+        "correct": ["Era un señor grande que hacía cosas de chicos"],
+        "answers": [
+          "Era un mujeriego compulsivo", "Era un señor grande que hacía cosas de chicos", "Era un vividor que esquilmaba a amigos y demás incautos", "Era mufa"
+        ]
+      },
+      {
+        "text": "47 ¿Quién dibujó la primera aparición del Captain Mar-Vell, allá por 1967?",
+        "correct": ["Gene Colan"],
+        "answers": [
+          "Dan Adkins", "Gene Colan", "Gil Kane", "John Buscema"
+        ]
+      },
+      {
+        "text": "48 ¿Cuál de estos autores no está enrolado en la Escuela de Marcinelle?",
+        "correct": ["Ted Benoit"],
+        "answers": [
+          "Batem", "Jean Roba", "Pierre Seron", "Ted Benoit"
+        ]
+      },
+      {
+        "text": "49 ¿Quién es el guionista de la saga Winter World?",
+        "correct": ["Chuck Dixon"],
+        "answers": [
+          "Chuck Dixon", "James Hudnall", "Mike Baron", "Timothy Truman"
+        ]
+      },
+      {
+        "text": "50 ¿Con cuál de estas heroínas de Fables se casó el Prince Charming?",
+        "correct": ["Se casó con las tres"],
+        "answers": [
+          "Cinderella", "Sleeping Beauty", "Snow White", "Se casó con las tres"
+        ]
+      },
+      {
+        "text": "51 ¿Con qué personaje identificamos al maestro Alfredo Falugi?",
+        "correct": ["Amanda"],
+        "answers": [
+          "Amanda", "Bárbara", "Dora", "Helena"
+        ]
+      },
+      {
+        "text": "52 ¿Cuál de estas versiones de Spider-Man murió en Spider-Verse?",
+        "correct": ["Peter Parquagh, el de 1602"],
+        "answers": [
+          "Peter Parquagh, el de 1602", "Spider-Man Noir", "Spectacular Spider-Ham", "Ninguno de ellos"
+        ]
+      },
+      {
+        "text": "53 ¿Cuál es el verdadero nombre de Rapture, la madre de Malcolm Dragon?",
+        "correct": ["Sharona Jackson"],
+        "answers": [
+          "Anissa Pierce", "Karen Duncan", "Roxy Washington", "Sharona Jackson"
+        ]
+      },
+      {
+        "text": "54 ¿Con qué nombre es más conocido David Hyde?",
+        "correct": ["Black Manta"],
+        "answers": [
+          "Black Flash", "Black Hand", "Black Manta", "Black Mask"
+        ]
+      },
+      {
+        "text": "55 ¿Cuál de estas historietas de la Skorpio no fue reeditada por Loco Rabia?",
+        "correct": ["Crónicas del Tiempo Medio"],
+        "answers": [
+          "Acero Líquido", "Bacteria", "Crónicas del Tiempo Medio", "El Príncipe de la Oscuridad"
+        ]
+      },
+      {
+        "text": "56 ¿Dónde reapareció Hercules tras la batalla con el High Evolutionary en la que evolucionó «más allá de la divinidad»?",
+        "correct": ["En la Galaxia Negra"],
+        "answers": [
+          "En la Galaxia Negra", "En el Olimpo", "En el Valhalla", "En Wundagore"
+        ]
+      },
+      {
+        "text": "57 ¿Quién es el autor de Leo Roa, El Cuarto Poder y Yo, Dragón?",
+        "correct": ["Juan Giménez"],
+        "answers": [
+          "Alfonso Azpiri", "Alfonso Font", "Carlos Giménez", "Juan Giménez"
+        ]
+      },
+      {
+        "text": "58 ¿Cuál fue el primer comic-book publicado por DC sin la aprobación del Comics Code Authority?",
+        "correct": ["Swamp Thing nº40"],
+        "answers": [
+          "Green Lantern/ Green Arrow nº85", "Hellblazer nº1", "Omega Men nº1", "Swamp Thing nº40"
+        ]
+      },
+      {
+        "text": "59 ¿La vida de qué escritor narró Pedro Mancini en Detrás del Ruido?",
+        "correct": ["William Burroughs"],
+        "answers": [
+          "Allen Ginsberg", "Hunter S. Thompson", "Phillip K. Dick", "William Burroughs"
+        ]
+      },
+      {
+        "text": "60 ¿Qué editorial publicó los primeros comics ambientados en el universo de Magic: The Gathering?",
+        "correct": ["Valiant"],
+        "answers": [
+          "CrossGen", "Dark Horse", "Malibu", "Valiant"
+        ]
+      },
+      {
+        "text": "61 ¿Qué famosa obra de Shakespeare adaptó a la historieta David Rubín?",
+        "correct": ["Romeo y Julieta"],
+        "answers": [
+          "Hamlet", "Otelo", "Romeo y Julieta", "Sueño de una Noche de Verano"
+        ]
+      },
+      {
+        "text": "62 ¿En qué revista vimos la primera aparición del Living Laser?",
+        "correct": ["Avengers"],
+        "answers": [
+          "Avengers", "Captain America", "Iron Man", "Thor"
+        ]
+      },
+      {
+        "text": "63 ¿A qué héroe de la Golden Age se enfrentó Vandal Savage en su primera aparición?",
+        "correct": ["Green Lantern"],
+        "answers": [
+          "Flash", "Green Lantern", "Hawkman", "Starman"
+        ]
+      },
+      {
+        "text": "64 ¿Cuál de estos autores no nació en Bélgica?",
+        "correct": ["Alfred"],
+        "answers": [
+          "Alfred", "Hermann", "Morris", "Peyo"
+        ]
+      },
+      {
+        "text": "65 ¿Qué personalidad del mundo real funciona como personaje secundario en la saga de Promethea?",
+        "correct": ["Aleister Crowley"],
+        "answers": [
+          "Aleister Crowley", "H. P. Lovecraft", "Lewis Carroll", "Nikola Tesla"
+        ]
+      },
+      {
+        "text": "66 ¿Qué guionista creó al Parasite durante su paso por Action Comics?",
+        "correct": ["Jim Shooter"],
+        "answers": [
+          "Jim Shooter", "Leo Dorfman", "Nelson Bridwell", "Otto Binder"
+        ]
+      }
+      ,
+      {
+        "text": "67 ¿Qué obra de Grant Morrison tiene entre sus protagonistas al Detective Carpenter?",
+        "correct": ["The Mystery Play"],
+        "answers": [
+          "Bible John", "St. Swithin´s Day", "The Liberators", "The Mystery Play"
+        ]
+      }
+      ,
+      {
+        "text": "68 Qué otro manga hizo la autora de Koe no Katachi (A Silent voice)?",
+        "correct": ["Fumetsu no anata e"],
+        "answers": [
+          "Fumetsu no anata e", "Tooi kono machi de", "Kimi no tame ni dekiru koto", "Akuro no Oka"
+        ]
+      }
+      ,
+      {
+        "text": "69 Cuál de las siguientes obras no fue editada por Maten al Mensajero?",
+        "correct": ["Animales"],
+        "answers": [
+          "El Ángel Negro", "El Pozo", "Notas al pie", "Animales"
+        ]
+      }
+      ,
+      {
+        "text": "70 Cuál de los siguientes protagonistas de manga es el menor de todos al arrancar su obra?",
+        "correct": ["The Mystery Play"],
+        "answers": [
+          "Monkey D. Luffy de One Piece", "Seiya de Saint Seiya", "Joseph Joestar de JoJo’s Bizarre adventure", "Hanamichi Sakuragi de Slam Dunk"
+        ]
+      }
+      ,
+      {
+        "text": "71 Cuál de las siguientes obras de Osamu Tezuka se editó última?",
+        "correct": ["Adolf"],
+        "answers": [
+          "La princesa Caballero (Ribon no Kishi)", "Adolf", "Hi no Tori (Fénix)", "Black Jack"
+        ]
+      }
+      ,
+      {
+        "text": "72 ¿Cuál de los siguientes personajes NO es protagonista de un manga de Clamp?",
+        "correct": ["Lelouch Vi Britannia"],
+        "answers": [
+          "Lelouch Vi Britannia", "Kamui Shirou", "Sakura Kinomoto", "Misaki Suzuhara"
+        ]
+      }
+      ,
+      {
+        "text": "73 Además de Hisoka, ¿qué otro personaje podía manipular NEN en el examen de Hunter que hizo Gon?",
+        "correct": ["Gittarackur"],
+        "answers": [
+          "Hanzo", "Gittarackur", "Killua", "Ninguno"
+        ]
+      }
+      ,
+      {
+        "text": "74 ¿Cuál de estas obras de Inio Asano es la más larga?",
+        "correct": ["Oyasumi Punpun"],
+        "answers": [
+          "Subarashii Sekai", "Oyasumi Punpun", "Dead Dead Demons DeDeDeDe Destruction", "Solanin"
+        ]
+      }
+      ,
+      {
+        "text": "75 ¿En qué manga los miembros de una organización tienen nombre clave de bebidas alcohólicas?",
+        "correct": ["Meitantei Conan"],
+        "answers": [
+          "Meitantei Conan", "Golgo 13", "Billy Bat", "X-1999"
+        ]
+      }
+      ,
+      {
+        "text": "76 Cuál de las siguientes afirmaciones sobre el protagonista de la parte 3 de JoJo’s Bizarre Adventure (JoJo no Kimyou na bouken) es falsa?",
+        "correct": ["Tiene sangre japonesa por parte de su madre"],
+        "answers": [
+          "Tiene sangre japonesa por parte de su madre", "Puede detener el tiempo con su Stand", "Derrotó a Dio Brando", "Su hija protagoniza otra de las partes del manga"
+        ]
+      }
+      ,
+      {
+        "text": "77 ¿Qué tienen en común “El hipnotizador”, “Cobalto” y “Un perro con sombrero”?",
+        "correct": ["Son todas obras donde participó Juan Saenz Valiente"],
+        "answers": [
+          "Son todas obras editadas por El Hotel de las Ideas", "Son todas obras donde participó Juan Saenz Valiente", "Son todas obras que nacieron en La Fierro", "No tienen nada en común"
+        ]
+      }
+      ,
+      {
+        "text": "78 ¿Qué dibujante no participó en “Quién mató a Rexton?”, la última obra de Diego Agrimbau?",
+        "correct": ["Pablo Túnica"],
+        "answers": [
+          "Gato Fernández", "Dante Ginevra", "Patricio Delpeche", "Pablo Túnica"
+        ]
+      }
+      ,
+      {
+        "text": "79 ¿A qué personaje referencia el nombre del protagonista de “Bizancio” de Mauro Mantella? ",
+        "correct": ["Constantine"],
+        "answers": [
+          "Alesteir Crowley", "Ozymandias", "Constantine", "El Rey Midas"
+        ]
+      }
+      ,
+      {
+        "text": "80 ¿Qué personaje tuvo como primer y principal guionista a Tiziano Sclavi?",
+        "correct": ["Dylan Dog"],
+        "answers": [
+          "Diabolik", "Dylan Dog", "Tex Willer", "Lupo Alberto"
+        ]
+      }
+    ];
+
+    function SortByText(a, b){
+      var aName = a.text.toLowerCase();
+      var bName = b.text.toLowerCase();
+      return ((aName < bName) ? -1 : ((aName > bName) ? 1 : 0));
+    }
+
+    State.Trivia.Questions.sort(SortByText);
+
+    // OBTENGO Y DIBUJO PREGUNTA
+
+    State.Trivia.DrawButtons = function(){
+
+      let bCont = $('footer#triviaButtons div.btn-group');
+      bCont.find('button').remove();
+
+      $.each(State.Trivia.Questions, function(i, v){
+
+        //<button type="button" class="btn btn-default btn-md">64</button>
+
+        let bt = document.createElement('button');
+        bt.setAttribute('class', 'btn btn-default btn-sm');
+        bt.setAttribute('data-question', i+1);
+        let txt = document.createTextNode(i+1);
+        bt.appendChild(txt);
+        bCont.append(bt);
+
+      });
+
+    };
+
+    State.Trivia.getQuestion = function(e, question){
+
+      e.preventDefault();
+      let q;
+
+      if(question) q = question;
+      else q = $("#TriviaForm #questionID").val();
+
+      let len = State.Trivia.Questions.length;
+
+      if(q == '' || q > len) return;
+
+      let z = q-1;
+
+      console.log("Obteniendo Pregunta", q, State.Trivia.Questions.length);
+      $("#TriviaForm #questionID").val("");
+
+      let TriviaQuestion = State.Trivia.Questions[z];
+
+      // ACA DIBUJO
+      $("#TriviaQuestion h3").html(TriviaQuestion.text);
+
+      let answerList = $("#TriviaQuestion ul");
+      answerList.find('li').remove();
+
+      $.each(TriviaQuestion.answers, function(i, v){
+
+        let li = document.createElement('li');
+        let text = document.createTextNode(v);
+        li.appendChild(text);
+
+        if(v == TriviaQuestion.correct[0]) li.setAttribute("class", 'alert correct');
+        else li.setAttribute("class", 'alert');
+
+        answerList.append(li);
+
+      });
+
+    };
+
+    State.Trivia.showCorrect = function(e){
+      e.preventDefault();
+      $("#TriviaQuestion li.correct").addClass('alert alert-success');
+    };
+
+
+    //FUNCIONES DE RIDDLER
+
+    State.Riddler.Init = function(){
+
+      this.cursor = 0;
+      this.optionCursor = 0;
+      this.maxQuestions = this.Questions.length;
+      console.log("Init Riddler", this);
+
+    };
+
+    State.Riddler.Start = function(e){
+
+      e.preventDefault();
+      this.getQuestion(e, this.cursor);
+      console.log("Riddler Started");
+
+    };
+
+    State.Riddler.Prev = function(e){
+
+      e.preventDefault();
+
+      if(this.cursor > 0) {
+        this.optionCursor = 0;
+        this.cursor--;
+        this.getQuestion(e, this.cursor);
+        console.log("Riddler Prev");
+      }else return;
+
+    };
+
+    State.Riddler.Next = function(e){
+
+      e.preventDefault();
+      let maxQ = this.maxQuestions -1;
+      if(this.cursor < maxQ) {
+        this.optionCursor = 0;
+        this.cursor++;
+        this.getQuestion(e, this.cursor);
+        console.log("Riddler Prev");
+      }else return;
+
+    };
+
+    State.Riddler.ShowOption = function(e){
+
+      e.preventDefault();
+      let maxQ = this.maxQuestions;
+
+      console.log("Riddler Option - Cursor, MaxQ, OptCursor",  this.cursor, maxQ, this.optionCursor);
+
+      if(this.cursor < maxQ) {
+
+        let question = State.Riddler.Questions[this.cursor];
+        console.log("Options: ", question.answers.length);
+
+
+        if(this.optionCursor != null && this.optionCursor < question.answers.length){
+          let actualOption = question.answers[this.optionCursor];
+
+          //DIBUJO UNO POR UNO LAS OPCIONES
+          let answerList = $("#RiddlerQuestion ul#RiddlerOptions");
+
+          let li = document.createElement('li');
+          let text = document.createTextNode(actualOption);
+          li.appendChild(text);
+          answerList.append(li);
+
+          console.log("Actual Option: ", actualOption);
+          this.optionCursor++;
+        }
+
+
+      }else return;
+
+    };
+
+    State.Riddler.showCorrect = function(e){
+
+      e.preventDefault();
+      let RiddlerQuestion = State.Riddler.Questions[this.cursor];
+      //let answerList = $("#RiddlerQuestion ul#RiddlerOptions");
+      //answerList.find('li').remove();
+      let correctList = $("#RiddlerQuestion ul#RiddlerCorrect");
+      correctList.find('li').remove();
+
+      $.each(RiddlerQuestion.correct, function(i, v){
+
+        let li = document.createElement('li');
+        let text = document.createTextNode(v);
+        li.appendChild(text);
+
+        if(v == RiddlerQuestion.correct[0]) li.setAttribute('style', 'alert alert-danger');
+        else li.setAttribute("class", 'alert');
+
+        correctList.append(li);
+
+      });
+
+    };
+
+    State.Riddler.getQuestion = function(e, q){
+
+      e.preventDefault();
+      let len = State.Riddler.Questions.length;
+
+      console.log("Riddler State: ", State.Riddler);
+
+      State.Riddler.optionCursor = 0;
+
+      if(q == '' || q > len) q = this.cursor;
+
+      console.log("Obteniendo Pregunta", q, State.Riddler.Questions.length);
+
+      let RiddlerQuestion = State.Riddler.Questions[q];
+
+      console.log(RiddlerQuestion);
+
+      // ACA DIBUJO
+      $("#RiddlerQuestion h3").html(RiddlerQuestion.text);
+
+      let answerList = $("#RiddlerQuestion ul");
+      answerList.find('li').remove();
+
+    };
+
+
+    State.Riddler.Questions = [
+
+      {
+        "text": "AUTOR",
+        "correct":["Juan Giménez"],
+        "answers": [
+          "1 (por 5 libros): Es argentino, pero no vive en nuestro país",
+          "2 (por 4 libros): Su estudio tiene vista al mar… y a una playa nudista gay",
+          "3 (por 3 libros): En 1990 ganó el premio Yellow Kid y en 1994 el Bulle D´Or",
+          "4 (por 2 libros): Diseñó personajes, fondos y vehículos para la película Heavy Metal",
+          "5 (por 1 libro): Dibujó guiones de Ricardo Barreiro, Carlos Trillo, Robeto Dal Pra y Alexandro Jodorowsky, entre otros"
+        ]
+      },
+
+      {
+        "text": "PERSONAJE",
+        "correct":["The Rocketeer"],
+        "answers": [
+          "1 (por 5 libros): Vivió en los años ´40 pero no es de la Golden Age",
+          "2 (por 4 libros): Su mejor amigo lo hizo volar",
+          "3 (por 3 libros): Su novia es un ícono erótico a nivel global",
+          "4 (por 2 libros): En 1991 fue llevado al cine por el director Joe Johnston",
+          "5 (por 1 libro): Su verdadero nombre es Cliff Secord pero se lo identifica con el cohete que lleva a modo de mochila"
+        ]
+      }
+
+    ];
+
+
+
+    // Seteo propiedades de User/players
+
+    State.Users.Players = [];
+
+    // AGREGA USER A LA LISTA
+
+    State.Users.addUser = function(e){
+
+      e.preventDefault();
+
+      let name = $("#PlayerName").val();
+
+      if(name == ''){
+        alert('Ingrese el nombre del Jugador');
+        return;
+      }
+
+      let player = {
+        "Name": $("#PlayerName").val(),
+        "Points": 0,
+      };
+
+      State.Users.Players.push(player);
+      this.createPlayerList();
+      $("#PlayerName").val("");
+
+    };
+
+    // CREA LISTA INICIAL DE PLAYERS
+
+    State.Users.createPlayerList = function(){
+
+      let PlayerList = $("#PlayerList");
+      let PlayerPointsList = $("#UserPointsSelect");
+
+      $("#PlayerList li").remove();
+      $("#UserPointsSelect option").remove();
+
+
+      $.each(State.Users.Players, function(index, val){
+
+        let li = document.createElement('li');
+        let NamePoints = val.Name + ': ' + val.Points;
+        let text = document.createTextNode(NamePoints);
+        li.appendChild(text);
+        PlayerList.append(li);
+
+        let opt = document.createElement('option');
+        opt.value = val.Name;
+        opt.text = val.Name;
+
+        PlayerPointsList.append(opt);
+
+
+      });
+
+      localStorage.setItem("Players", State.Users.Players);
+      let p = localStorage.getItem("Players");
+      console.log('retrievedObject: ', p);
+      console.log("Created Players List");
+
+    };
+
+    // AGREGA PUNTOS A LOS PLAYERS
+
+    State.Users.AddPoints = function(user, points){
+
+      function find(nameKey, myArray){
+        for (var i=0; i < myArray.length; i++) {
+          if (myArray[i].Name === nameKey) {
+            return myArray[i];
+          }
+        }
+      }
+
+      let u = find(user, this.Players);
+      u.Points += points;
+      console.log(u);
+
+      localStorage.setItem("Players", State.Users.Players);
+
+    };
+
+
+    // HACE UPDATE DE LISTA DE PUNTOS
+
+    State.Users.UpdatePlayersList = function() {
+
+      let PlayerList = $("#PlayerList");
+      $("#PlayerList li").remove();
+
+      $.each(State.Users.Players, function(index, val){
+
+        let li = document.createElement('li');
+        let NamePoints = val.Name + ': ' + val.Points;
+        let text = document.createTextNode(NamePoints);
+        li.appendChild(text);
+        PlayerList.append(li);
+
+      });
+
+      console.log("Updated Players List");
+
+    };
+
+    // INICIALIZO
+    State.Killer.Init();
+    State.Trivia.Init();
+    State.Aprox.Init();
+    State.Untie.Init();
+    State.Riddler.Init();
+
+    // FUNCIONES DE USUARIOS
+
+    $("#AddUser").click(function (e){
+      State.Users.addUser(e);
+    });
+
+    $("#DoneAddUser").click(function (e){
+      e.preventDefault();
+      if(Object.keys(State.Users.Players).length === 0) {
+       console.log("Error attempting to create user list. It is empty");
+       return;
+      }
+      $("#formAddUserPoints").toggle();
+      $("#formAddUsers").toggle();
+    });
+
+    // MUESTRA CORRECTA DE Aproximacion
+    $("#showAproxAnswer").click(function(e){
+      State.Aprox.showCorrect(e);
+    });
+
+    // MUESTRA CORRECTA DE Killer
+    $("#showKillerAnswer").click(function(e){
+      State.Killer.showCorrect(e);
+    });
+
+    // MUESTRA CORRECTA DE Riddler
+    $("#showRiddlerAnswer").click(function(e){
+      State.Riddler.showCorrect(e);
+    });
+
+    // MUESTRA CORRECTA DE Untie
+    $("#showUntieAnswer").click(function(e){
+      State.Untie.showCorrect(e);
+    });
+
+    // MUESTRA CORRECTA DE TRIVIA
+    $("#showCorrectAnswer").click(function(e){
+      State.Trivia.showCorrect(e);
+    });
+
+    // BINDEO DINAMICO DE PREGUNTAS
+    $(document.body).on('click', '#TriviaQuestion ul li',function(e){
+
+      if(!$(this).hasClass('correct')) $(this).addClass('alert alert-danger');
+      State.Trivia.showCorrect(e);
+
+    });
+
+    $(document.body).on('click', '#KillerQuestion ul li',function(e){
+
+      if(!$(this).hasClass('correct')) $(this).addClass('alert alert-danger');
+      State.Killer.showCorrect(e);
+
+    });
+
+
+    // SUMAN Y RESTAN PUNTOS
+
+    $("#minusPoint").click(function(e){
+      e.preventDefault();
+      let user = $("#UserPointsSelect").val();
+      State.Users.AddPoints(user, -1);
+      State.Users.UpdatePlayersList();
+
+    });
+
+    $("#plusPoint").click(function(e){
+      e.preventDefault();
+      let user = $("#UserPointsSelect").val();
+      State.Users.AddPoints(user, 1);
+      State.Users.UpdatePlayersList();
+
+    });
+
+    // IR A LA PREGUNTA DE TRIVIA
+
+    $("#goQuestion").click(function (e){
+      State.Trivia.getQuestion(e);
+    });
+
+    // IR A LA PREGUNTA ESPECIFICA POR BOTON
+
+    $(document.body).on('click', '#triviaButtons button', function(e){
+
+      let q = $(this).attr('data-question');
+      if(!$(this).hasClass('correct')) $(this).addClass('btn-danger');
+      State.Trivia.getQuestion(e, q);
+
+    });
+
+    $("#StartKiller").click(function (e){
+      State.Killer.Start(e);
+      $(this).hide();
+    });
+
+    $("#StartUntie").click(function (e){
+      State.Untie.Start(e);
+      $(this).hide();
+    });
+
+    $("#StartAprox").click(function (e){
+      State.Aprox.Start(e);
+      $(this).hide();
+    });
+
+    $("#StartRiddler").click(function (e){
+      State.Riddler.Start(e);
+      $(this).hide();
+    });
+
+
+    $("#prevUntieQuestion").click(function (e){
+      State.Untie.Prev(e);
+    });
+
+    $("#nextUntieQuestion").click(function (e){
+      State.Untie.Next(e);
+    });
+
+    $("#prevRiddlerQuestion").click(function (e){
+      State.Riddler.Prev(e);
+    });
+
+    $("#nextRiddlerQuestion").click(function (e){
+      State.Riddler.Next(e);
+    });
+
+
+    $("#showRiddlerOption").click(function (e){
+      State.Riddler.ShowOption(e);
+    });
+
+    $("#prevAproxQuestion").click(function (e){
+      State.Aprox.Prev(e);
+    });
+
+    $("#nextAproxQuestion").click(function (e){
+      State.Aprox.Next(e);
+    });
+
+    $("#prevKillerQuestion").click(function (e){
+      State.Killer.Prev(e);
+    });
+
+    $("#nextKillerQuestion").click(function (e){
+      State.Killer.Next(e);
+    });
+
+
+  });
+  </script>
+  <style>
+
+    body{
+      background: #bfd3ff;
+    }
+
+    ul#PlayerList {
+      padding: 1em 0;
+      text-transform: uppercase;
+    }
+
+    .question {
+      padding-bottom:2.2em;
+      text-align:center;
+    }
+
+    .question ul li{
+      font-size: 1.6em;
+    }
+
+    .question header h3{
+      background: rgba(0,0,0,.9);
+      color:white;
+      padding:10px;
+      border-radius: 5px;
+      line-height:1.4em;
+    }
+
+    .question .correct{
+
+    }
+
+    #RiddlerQuestion ul#RiddlerOptions li{
+      text-align: left;
+    }
+
+    #RiddlerQuestion ul#RiddlerCorrect li{
+      font-size:2em;
+      font-weight:bold;
+    }
+
+    #RulesText{
+    padding-bottom:3em;
+      }
+
+  </style>
+</body>
+</html>
